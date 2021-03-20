@@ -1,0 +1,18 @@
+YouTube Channels to Watch Out For
+
+Corey Schafer
+OMGenomics (Maria Nattestad)
+rebelCoder
+
+
+Recommended Books
+- Algorithms on Strings, Trees, and Sequences (Computer Science and Computational Biology) - Dam Gusfield
+- Python Algorithms (Mastering Basic Algorithms in the Python Language) - Magnus Lie Hetland
+- Bioinformatics Algorithms (Design and Implementation in Python) - Miguel Rocha & Pedro G. Ferreira
+
+
+Videos
+https://www.youtube.com/watch?v=3joOQ3A3KBQ - Bioinformatics in Python: Intro
+https://www.youtube.com/watch?v=o_-6JXLYS-k - The Structure of DNA
+https://www.youtube.com/watch?v=Wkx0fI4e0fs - Bioinformatics in Python: DNA Toolkit. Part 1: Validating and counting nucleotides.
+https://www.youtube.com/watch?v=h1aP9HCFu6Y - Bioinformatics in Python: DNA Toolkit. Part 2: Transcription, Reverse Complement.
