@@ -5,7 +5,7 @@ from dna_toolkit import *
 from utilities import colored
 import random
 
-randDNAStr = ''.join([random.choice(DNA_Nucleotides) for nuc in range(51)])
+randDNAStr = ''.join([random.choice(DNA_Nucleotides) for nuc in range(50)])
 randDNAStr1 = "ATTTCGT"
 randDNAStr2 = "ATTTCGTx"
 randDNAStr3 = "AtCCgGGtGGt"
@@ -32,3 +32,6 @@ print(f'[5] + GC Content: {gc_content(DNAStr)}%\n')
 print(f'[6] + GC Content in Subsection k=5: {gc_content_subsec(DNAStr, k=5)}\n')
 print(f'[7] + Aminoacids Sequence from DNA: {translate_seq(DNAStr, 0)}\n')
 print(f'[8] + Codon frequency (L): {codon_usage(DNAStr, "L")}\n')
+print(f'[9] + Reading_frames:')
+for frame in gen_reading_frames(DNAStr):
+    print(frame)
