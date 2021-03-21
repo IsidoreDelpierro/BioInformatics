@@ -2,13 +2,13 @@
 #rebelCoder
 import collections
 from structures import *
-#from collections import Counter
+from collections import Counter
 
 #Check the sequence to make sure it is a DNA String
 def validateSeq(dna_seq):
     tmpseq = dna_seq.upper()
     for nuc in tmpseq:
-        if nuc not in Nucleotides:
+        if nuc not in DNA_Nucleotides:
             return False
     return tmpseq
 
@@ -43,3 +43,21 @@ def gc_content_subsec(seq, k=20):
         subseq = seq[i:i + k]
         res.append(gc_content(subseq))
     return res
+
+def translate_seq(seq, init_pos = 0):
+    """Translates a DNA sequence into an amonoacid sequence"""
+    return [DNA_Codons[seq[pos:pos+3]] for pos in range(init_pos, len(seq) - 2, 3)]
+
+
+def codon_usage(seq, aminoacid):
+    """Provides the freqency of each codon encoding a given aminon in a DNA sequence."""
+    tmpList = []
+    for i in range(0, len(seq) - 2, 3):
+        if DNA_Codons[seq[i:i + 3]] == aminoacid:
+            tmpList.append (seq[i:i + 3])
+
+        freqDict = dict(Counter(tmpList))
+        totalWight = sum(freqDict.values())
+        for seq in freqDict:
+            freqDict[seq] = round(freqDict[seq] / totalWight, 2)
+        return freqDict

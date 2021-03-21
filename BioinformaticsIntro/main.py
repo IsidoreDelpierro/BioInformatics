@@ -1,11 +1,11 @@
 #DNA Toolset/Code testing file
 #rebelCoder
 
-from DNAToolkit import *
+from dna_toolkit import *
 from utilities import colored
 import random
 
-randDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(50)])
+randDNAStr = ''.join([random.choice(DNA_Nucleotides) for nuc in range(51)])
 randDNAStr1 = "ATTTCGT"
 randDNAStr2 = "ATTTCGTx"
 randDNAStr3 = "AtCCgGGtGGt"
@@ -30,3 +30,5 @@ print(f"5' {reverse_complement(DNAStr)} 3' [Rev. Complement]\n")
 #print(f"3' {colored(reverse_complement(DNAStr))} 5'\n")
 print(f'[5] + GC Content: {gc_content(DNAStr)}%\n')
 print(f'[6] + GC Content in Subsection k=5: {gc_content_subsec(DNAStr, k=5)}\n')
+print(f'[7] + Aminoacids Sequence from DNA: {translate_seq(DNAStr, 0)}\n')
+print(f'[8] + Codon frequency (L): {codon_usage(DNAStr, "L")}\n')
