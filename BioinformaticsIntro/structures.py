@@ -3,7 +3,7 @@ DNA_Nucleotides = ["A", "C", "G", "T"]
 DNA_ReverseComplement = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
 
 DNA_Codons = {
-    # 'M' - START, '_' - STOP
+    # 'M' = START, '_' = STOP
     "GCT": "A", "GCC": "A", "GCA": "A", "GCG": "A",
     "TGT": "C", "TGC": "C",
     "GAT": "D", "GAC": "D",

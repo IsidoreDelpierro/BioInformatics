@@ -1,6 +1,7 @@
 #DNA Toolset/Code testing file
 #rebelCoder
 
+#comment multiple lines of code using Ctrl+/
 from dna_toolkit import *
 from utilities import colored
 import random
@@ -35,3 +36,6 @@ print(f'[8] + Codon frequency (L): {codon_usage(DNAStr, "L")}\n')
 print(f'[9] + Reading_frames:')
 for frame in gen_reading_frames(DNAStr):
     print(frame)
+
+test_rf_frame = ['L', 'L', 'M', 'A', 'L', 'V', 'V', 'L', '_', 'R', 'R', 'G', 'S', 'V', 'G', 'H']
+print("\n", proteins_from_rf(test_rf_frame))
